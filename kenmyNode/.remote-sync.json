@@ -1,0 +1,13 @@
+{
+  "transport": "scp",
+  "hostname": "172.16.248.131 ",
+  "port": "22",
+  "username": "root",
+  "password": "muchnik2412",
+  "target": "/root/kenmyNode",
+  "ignore": [
+    ".git/**",
+    ".node_modules/**"
+  ],
+  "uploadOnSave": true
+}

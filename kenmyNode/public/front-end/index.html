@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title></title>
+    <link rel="stylesheet" href="vendor/jqm/c/t/uchmnt.min.css"/>
+    <link rel="stylesheet" href="vendor/jqm/c/t/jquery.mobile.icons.min.css"/>
+    <link rel="stylesheet" href="vendor/jqm/c/jquery.mobile.structure-1.4.5.min.css"/>
+    <style>
+       [data-field]{
+         font-size:0.8em;
+         font-weight:bolder;
+         padding:0.5em 0.25em;
+       }
+       label{
+         font-size:0.8em;
+         font-weight:bolder !important;
+       }
+       .negative{
+         background-color:#b73a05 !important;
+         color:white !important;
+       }
+    </style>
+    <script src="vendor/jqm/j/jquery.min.js" ></script>
+    <script src="vendor/jqm/j/jquery.mobile.min.js" ></script>
+  </head>
+  <body>
+    <div data-role="page" id="pag1">
+        <div data-role="header" data-position="fixed">
+          <h1>EJEMPLO EXAMEN JANSY</h1>
+        </div>
+        <div role="main" class="ui-content">
+        </div>
+          <form method="post" action="form">
+            <div class="ui-field-contain">
+              <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre"/>
+            </div>
+            <div class="ui-field-contain">
+              <label for="Edad">Edad:</label>
+              <select name="edad" id="edad">
+                 <option value="19">19</option>
+                 <option value="20">20</option>
+                 <option value="21">21</option>
+                 <option value="22">22</option>
+                 <option value="23">23</option>
+              </select>
+            </div>
+            <div class="ui-field-contain">
+              <label for="fecha">Fecha de Nacimiento:</label>
+            <input type="text" name="fecha" id="fecha"/>
+            </div>
+            <div class="ui-field-contain">
+              <label for="sexo" class="sexo">Sexo:</label><br/>
+              <select name="sexo" id="sexo">
+                 <option value="masculino">Masculino</option>
+                 <option value="femenino">Femenino</option>
+              </select>
+            </div>
+            <hr/>
+            <input type="button" value="Guardar" id="btnGuardar"/>
+          </form>
+          <a href="#pag2" class="ui-btn">Lista de Usuarios</a>
+        <div data-role="footer" data-position="fixed">
+            <h3>UNICAH 2015</h3>
+        </div>
+      </div>
+
+
+      <div data-role="page" id="pag2">
+        <div data-role="header" data-position="fixed">
+          <a href="#page1" class=class="ui-btn" data-icon="check" data-rel="back" > Back</a>
+          <h1>Datos Usuarios</h1>
+        </div>
+           <div role="main" class="ui-content">
+
+              <input type="button" name="MostrarLista" id="MostrarLista" value="Mostrar lista">
+                <div>
+                <uld  id="GenerarLista" data-inset="true" >
+
+                </ul>
+              </div>
+            </div>
+          <div data-role="footer" data-position="fixed">
+            <h3>UNICAH 2015</h3>
+        </div>
+      </div>
+
+      <script src="front-end/app_front.js"></script>
+
+  </body>
+  </html>
